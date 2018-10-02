@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Hands</title>
+</head>
+<body>
+    <style>
+
+        .arm {
+            bottom: 0;
+            height: 480px;
+            position: absolute;
+            width: 110px;
+        }
+
+        .arm-left {
+            left: 100px;
+        }
+
+        .arm-right {
+            right: 100px;
+        }
+
+        .arm-palm {
+            border-radius: 0px 0px 55px 76px;
+            height: 108px;
+            position: absolute;
+            right: 90px;
+            top: 165px;
+            width: 150px;
+        }
+
+        .arm-palm-finger-10 {
+            border-radius: 0px 0px 40px;
+            height: 50px;
+            position: absolute;
+            right: 80px;
+            top: 220px;
+            transform: rotate(29deg);
+            width: 45px;
+        }
+
+        .background-pink {
+            background-color: #f3d2c4;
+        }
+
+        .bracelet {
+            border-radius: 50%;
+            height: 22px;
+            position: absolute;
+            top: 300px;
+            width: 22px;
+            z-index: 3;
+        }
+
+        .bracelet-odd {
+            background-color: #f46e8c;
+        }
+
+        .bracelet-pair {
+            background-color: #f1355f;
+        }
+
+        .bracelet-1 {
+            right: 195px;
+        }
+
+        .bracelet-2 {
+            right: 175px;
+        }
+
+        .bracelet-3 {
+            right: 155px;
+        }
+
+        .bracelet-4 {
+            right: 135px;
+        }
+
+        .bracelet-5 {
+            right: 115px;
+        }
+
+        .bracelet-6 {
+            right: 95px;
+        }
+
+        .center {
+            left: 0;
+            margin: 0 auto;
+            position: absolute;
+            right: 0;
+        }
+
+        .container {
+            animation: jump 0.6s infinite;
+            background-color: purple;
+            height: 730px;
+            margin: auto;
+            position: relative;
+            width: 520px;
+        }
+
+        .finger {
+            position: absolute;
+            width: 40px;
+            z-index: 2;
+        }
+
+        .finger-right {
+            position: absolute;
+            width: 36px;
+            z-index: 2;
+        }
+
+        .finger-1 {
+            border-radius: 20px 20px 0px 0px;
+            height: 86px;
+            left: 68px;
+            top: 74px;
+        }
+
+        .finger-2 {
+            border-radius: 20px;
+            height: 75px;
+            left: 110px;
+            top: 120px;
+        }
+
+        .finger-3 {
+            border-radius: 20px;
+            height: 75px;
+            left: 152px;
+            top: 120px;
+        }
+
+        .finger-4 {
+            border-radius: 20px 20px 0px 0px;
+            height: 100px;
+            left: 194px;
+            top: 60px;
+        }
+
+        .finger-5 {
+            border-radius: 28px;
+            height: 75px;
+            left: 194px;
+            top: 180px;
+            transform: rotate(-65deg);
+            width: 45px;
+        }
+
+        .finger-6 {
+            top: 79px;
+            left: 280px;
+        }
+
+        .finger-7 {
+            border-radius: 20px 20px 0px 0px;
+            height: 110px;
+            right: 166px;
+            top: 55px;
+        }
+
+        .finger-8 {
+            border-radius: 20px 20px 0px 0px;
+            height: 120px;
+            right: 128px;
+            top: 45px;
+        }
+
+        .finger-9 {
+            right: 90px;
+        }
+
+        .finger-10 {
+            border-radius: 25px 14px 0px 0px;
+            height: 70px;
+            right: 54px;
+            top: 160px;
+            transform: rotate(26deg);
+            width: 38px;
+        }
+
+        .glove {
+            background-color: #333;
+            border-radius: 0px 0px 55px 55px;
+            height: 110px;
+            left: 68px;
+            position: absolute;
+            top: 160px;
+            width: 167px;
+        }
+
+        .nail {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 8px 8px 16px 16px;
+            height: 20px;
+            position: absolute;
+            width: 30px;
+            z-index: 3;
+        }
+
+        .nail-1 {
+            left: 115px;
+            top: 170px;
+        }
+
+        .nail-2 {
+            left: 157px;
+            top: 170px;
+        }
+
+        .nail-3 {
+            left: 182px;
+            top: 198px;
+            transform: rotate(120deg);
+            width: 33px;
+        }
+
+        .nail-4 {
+            height: 8px;
+            right: 43px;
+            top: 181px;
+            transform: rotate(112deg);
+            width: 20px;
+        }
+
+        .shine-1 {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            height: 250px;
+            left: 106px;
+            position: absolute;
+            top: 280px;
+            width: 8px;
+            z-index: 2;
+        }
+
+        .shine-2 {
+            background-color: #e4c5b8;
+            height: 300px;
+            left: 406px;
+            top: 335px;
+        }
+
+        .shine-3 {
+            border-left: 7px solid #e4c5b8;
+            border-radius: 50%;
+            height: 45px;
+            right: 102px;
+            position: absolute;
+            top: 192px;
+            transform: rotate(32deg);
+            width: 30px;
+        }
+
+        @keyframes jump {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(30px); }
+            100% { transform: translateY(0px) }
+        }
+
+    </style>
+
+    <div class="container">
+        <div class="arm arm-left background-pink"></div>
+        <div class="shine-1"></div>
+        <div class="finger finger-1 background-pink"></div>
+        <div class="finger finger-2 background-pink"></div>
+        <div class="finger finger-3 background-pink"></div>
+        <div class="finger finger-4 background-pink"></div>
+        <div class="finger finger-5 background-pink"></div>
+        <div class="glove"></div>
+        <div class="arm arm-right background-pink"></div>
+        <div class="arm-palm background-pink"></div>
+        <div class="finger-right finger-1 finger-6 background-pink"></div>
+        <div class="finger-right finger-7 background-pink"></div>
+        <div class="finger-right finger-8 background-pink"></div>
+        <div class="finger-right finger-7 finger-9 background-pink"></div>
+        <div class="finger-right finger-10 background-pink"></div>
+        <div class="arm-palm-finger-10 background-pink"></div>
+        <div class="shine-1 shine-2"></div>
+        <div class="shine-3"></div>
+        <div class="bracelet bracelet-odd bracelet-1"></div>
+        <div class="bracelet bracelet-pair bracelet-2"></div>
+        <div class="bracelet bracelet-odd bracelet-3"></div>
+        <div class="bracelet bracelet-pair bracelet-4"></div>
+        <div class="bracelet bracelet-odd bracelet-5"></div>
+        <div class="bracelet bracelet-pair bracelet-6"></div>
+        <div class="nail nail-1"></div>
+        <div class="nail nail-2"></div>
+        <div class="nail nail-3"></div>
+        <div class="nail nail-4"></div>
+    </div>
+</body>
+</html>
