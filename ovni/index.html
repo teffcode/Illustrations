@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ovni</title>
+</head>
+<body>
+    <style>
+
+        .center {
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+        }
+
+        .container {
+            background-color: #01226f;
+            height: 240px;
+            margin: auto;
+            padding: 10px;
+            position: relative;
+            width: 500px;
+        }
+
+        .line {
+            background-color: #333;
+            height: 40px;
+            position: absolute;
+            top: 200px;
+            width: 5px;
+            z-index: 2;
+        }
+
+        .line-1 {
+            background-color: #333;
+            height: 5px;
+            position: absolute;
+            top: 235px;
+            width: 259px;
+            z-index: 2;
+        }
+
+        .line-2 {
+            background-color: #43facd;
+            height: 5px;
+            position: absolute;
+            top: 230px;
+            width: 259px;
+            z-index: 2;
+        }
+
+        .line-left {
+            transform: rotate(-30deg);
+            z-index: 3;
+        }
+
+        .line-left-1 {
+            left: 228px;
+            transform: rotate(-13deg);
+        }
+
+        .line-left-2 {
+            left: 168px;
+        }
+
+        .line-left-3 {
+            left: 120px;
+        }
+
+        .line-right {
+            transform: rotate(30deg);
+            z-index: 3;
+        }
+
+        .line-right-1 {
+            right: 228px;
+            transform: rotate(13deg);
+        }
+
+        .line-right-2 {
+            right: 168px;
+        }
+
+        .line-right-3 {
+            right: 119px;
+        }
+
+        .semi-circle {
+            border-radius: 300px 300px 0 0;
+            -moz-border-radius: 300px 300px 0 0;
+            -webkit-border-radius: 300px 300px 0 0;
+        }
+
+        .semi-circle-1 {
+            background-color: #43facd;
+            border: 5px solid #333; 
+            height: 130px; 
+            width: 280px; 
+        }
+
+        .semi-circle-2 {
+            background-color: #38ddd8;
+            top: 25px;
+            height: 120px; 
+            width: 255px; 
+        }
+
+        .shadow-circle {
+            background: #43facd;
+            border-radius: 0 100% 0 0;
+            -moz-border-radius: 0 100% 0 0;
+            -webkit-border-radius: 0 100% 0 0;
+            height: 156px;
+            position: absolute;
+            right: 138px;
+            top: 51px;
+            width: 77px;
+        }
+
+        .shadow-circle-1 {
+            background: #38ddd8;
+            border-radius: 0 100% 0 0;
+            -moz-border-radius: 0 100% 0 0;
+            -webkit-border-radius: 0 100% 0 0;
+            height: 156px;
+            position: absolute;
+            right: 152px;
+            top: 50px;
+            width: 70px;
+            transform: rotate(4deg);
+        }
+
+        .piece-1 {
+            background-image: linear-gradient(#43facd, #22afff);
+            border: 5px solid #333; 
+            border-radius: 40px 40px 0px 0px;
+            height: 30px;
+            top: 125px;
+            width: 340px;
+        }
+
+        .piece-2 {
+            background-image: linear-gradient(#22afff, #01226f);
+            border: 5px solid #333;
+            height: 20px;
+            top: 160px;
+            width: 370px;
+            z-index: 3;
+        }
+
+        .piece-3 {
+            background-image: linear-gradient(#43facd, #22afff);
+            border: 5px solid #333;
+            border-radius: 20px;
+            height: 28px;
+            top: 175px;
+            width: 450px;
+            z-index: 4;
+        }
+
+        .piece-4 {
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 80px solid #22afff;
+            height: 0px;
+            top: 160px;
+            width: 245px;
+            z-index: 2;
+        }
+
+        .window {
+            background-color: #43facd;
+            border: 5px solid #333;
+            border-radius: 50%;
+            height: 12px;
+            position: absolute;
+            top: 134px;
+            width: 12px;
+            z-index: 2;
+        }
+
+        .window-1-r {
+            left: 90px;
+        }
+
+        .window-2-r {
+            left: 180px;
+        }
+
+        .window-3-r {
+            left: 270px;
+        }
+
+        .window-1-l{
+            left: -90px;
+        }
+
+        .window-2-l {
+            left: -180px;
+        }
+
+        .window-3-l {
+            left: -270px;
+        }
+
+    </style>
+
+    <div class="container">
+        <div class="semi-circle semi-circle-1 center"></div>
+        <div class="semi-circle semi-circle-2 center"></div>
+        <div class="shadow-circle"></div>
+        <div class="shadow-circle-1"></div>
+        <div class="window center"></div>
+        <div class="window window-1-r center"></div>
+        <div class="window window-2-r center"></div>
+        <div class="window window-3-r center"></div>
+        <div class="window window-1-l center"></div>
+        <div class="window window-2-l center"></div>
+        <div class="window window-3-l center"></div>
+        <div class="piece-1 center"></div>
+        <div class="piece-2 center"></div>
+        <div class="piece-3 center"></div>
+        <div class="piece-4 center"></div>
+        <div class="line line-left line-left-1"></div>
+        <div class="line line-left line-left-2"></div>
+        <div class="line line-left line-left-3"></div>
+        <div class="line line-right line-right-1"></div>
+        <div class="line line-right line-right-2"></div>
+        <div class="line line-right line-right-3"></div>
+        <div class="line line-1 center"></div>
+        <div class="line line-2 center"></div>
+    </div>
+</body>
+</html>

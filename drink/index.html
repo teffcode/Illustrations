@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        .background-white {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .background-yellow {
+            /* background-color: #fceb45; */
+            background-image: linear-gradient(#fceb45, #f1b718);
+        }
+
+        .background-orange {
+            background-color: #f1b718;
+        }
+
+        .bottom-drink {
+            height: 110px;
+            top: 191px;
+            width: 291px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bottom-drink-1 {
+            height: 110px;
+            top: 309px;
+            width: 239px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bottom-drink-left {
+            width: 0;
+            height: 0;
+            border-top: 75px solid rgba(255, 255, 255, 0.5);
+            border-left: 12px solid transparent;
+        }
+
+        .bottom-drink-left-1 {
+            border-top: 66px solid #fceb45;
+            border-left: 11px solid transparent;
+            height: 0;
+            left: -5px;
+            position: absolute;
+            width: 0;
+        }
+
+        .bottom-drink-right {
+            border-top: 76px solid rgba(255, 255, 255, 0.5);
+            border-right: 12px solid transparent;
+            height: 0;
+            position: absolute;
+            right: 1px;
+            width: 0;
+        }
+
+        .bottom-drink-right-1 {
+            border-top: 76px solid #fceb45;
+            border-right: 12px solid transparent;
+            height: 0;
+            position: absolute;
+            right: -5px;
+            width: 0;
+        }
+
+        .bottom-drink-border {
+            background-color: #5b0808;
+            height: 120px;
+            width: 10px;
+            z-index: 2;
+        }
+
+        .bottom-drink-border-1 {
+            background-color: #5b0808;
+            height: 180px;
+            width: 10px;
+            z-index: 2;
+        }
+
+        .bottom-drink-skew-l {
+            position: absolute;
+            transform: rotate(-10deg);
+        }
+
+        .bottom-drink-skew-r {
+            position: absolute;
+            right: 0px;
+            transform: rotate(10deg);
+        }
+
+        .bottom-drink-center {
+            border-bottom: 10px solid #5b0808;
+            display: inline-block;
+            height: 100%;
+            width: 266px;
+        }
+
+        .bottom-drink-1-center {
+            height: 100%;
+            width: 232px;
+        }
+
+        .bottom-drink-2-center {
+            border-bottom: 10px solid #5b0808;
+            height: 60px;
+            top: 110px;
+            width: 205px;
+        }
+
+        .bottom-drink-3-center {
+            height: 40px;
+            top: 110px;
+            width: 218px;
+        }
+
+        .bubble-1 {
+            background-color: white;
+            border-radius: 10px;
+            height: 95px; 
+            opacity: 0.7;
+            position: absolute;
+            right: 100px;
+            top: 330px;
+            transform: rotate(10deg);
+            width: 12px;
+        }
+
+        .bubble-2 {
+            height: 50px; 
+            right: 80px;
+            top: 230px;
+        }
+
+        .bubble-3 {
+            height: 28px; 
+            right: 65px;
+            top: 115px;
+            transform: rotate(-8deg);
+        }
+
+        .bubble-4 {
+            height: 14px;
+            right: 74px;
+            top: 90px;
+            transform: rotate(-28deg);
+        }
+
+        .container {
+            background-color: #df3939;
+            height: 500px;
+            margin: 0 auto;
+            position: relative;
+            width: 400px;
+        }
+
+        .center {
+            position: absolute;
+            left: 0;
+            margin: auto;
+            right: 0;
+        }
+
+        .coffee-border {
+            border: 10px solid #5b0808;
+            border-radius: 5px;
+            height: 8px;
+        }
+
+        .logo {
+            border: 10px solid #5b0808;
+            top: 258px;
+            height: 74px;
+            position: absolute;
+            width: 115px;
+            z-index: 3;
+        }
+
+        .rectangle-one {
+            top: 155px;
+            width: 330px;
+        }
+        
+        .rectangle-two {
+            top: 173px;
+            width: 346px;
+            z-index: 2;
+        }  
+
+        .top-drink {
+            height: 135px;
+            top: 10px;
+            width: 325px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .top-drink-center {
+            border-bottom: 10px solid #5b0808;
+            border-top: 10px solid #5b0808;
+            display: inline-block;
+            height: 100%;
+            width: 45px;
+            z-index: 2;
+        } 
+
+        .top-drink-left {
+            border-bottom: 10px solid #5b0808;
+            border-left: 10px solid #5b0808;
+            border-top: 10px solid #5b0808;
+            border-radius: 150px 0px 0px 0px;
+            display: inline-block;
+            height: 100%;
+            width: 130px;
+        } 
+
+        .top-drink-right {
+            border-bottom: 10px solid #5b0808;
+            border-top: 10px solid #5b0808;
+            border-right: 10px solid #5b0808;
+            border-radius: 0px 150px 0px 0px;
+            display: inline-block;
+            height: 100%;
+            width: 130px;
+        } 
+
+    </style>
+
+    <div class="container">
+        <div class="top-drink center">
+            <div class="top-drink-left background-white"></div>
+            <div class="top-drink-center center background-white"></div>
+            <div class="top-drink-right background-white"></div>
+        </div>
+        <div class="rectangle-one coffee-border center background-white"></div>
+        <div class="rectangle-two coffee-border center background-white"></div>
+        <div class="bottom-drink center">
+            <div class="bottom-drink-left"></div>
+            <div class="bottom-drink-border bottom-drink-skew-l"></div>
+            <div class="bottom-drink-center center background-white"></div>
+            <div class="bottom-drink-right"></div>
+            <div class="bottom-drink-border bottom-drink-skew-r"></div>
+        </div>
+        <div class="bottom-drink-1 center">
+            <div class="bottom-drink-left-1"></div>
+            <div class="bottom-drink-border-1 bottom-drink-skew-l"></div>
+            <div class="bottom-drink-1-center center background-yellow"></div>
+            <div class="bottom-drink-2-center center background-orange"></div>
+            <div class="bottom-drink-3-center center background-orange"></div>
+            <div class="bottom-drink-right-1"></div>
+            <div class="bottom-drink-border-1 bottom-drink-skew-r"></div>
+        </div>
+        <div class="logo center">
+            <img src="./jsconf-logo.png" alt="jsconf-logo">
+        </div>
+        <div class="bubble-1"></div>
+        <div class="bubble-1 bubble-2"></div>
+        <div class="bubble-1 bubble-3"></div>
+        <div class="bubble-1 bubble-4"></div>
+    </div>
+</body>
+</html>
