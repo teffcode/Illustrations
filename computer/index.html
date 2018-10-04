@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+
+        .background-brown {
+            background-color: #c08b6c;
+        }
+
+        .background-purple {
+            background-color: #a2aad4;
+        }
+
+        .center {
+            left: 0;
+            margin: 0 auto;
+            position: absolute;
+            right: 0;
+        }
+        
+        .container {
+            background-color: #f969b6;
+            height: 600px;
+            margin: 0 auto;
+            position: relative;
+            width: 920px;
+        }
+
+        .computer-bottom {
+            background-color: white;
+            border: 5px solid #18185e;
+            border-radius: 0px 0px 30px 30px;
+            bottom: 103px;
+            height: 50px;
+            width: 560px;
+        }
+
+        .computer-bottom-1 {
+            border: 5px solid #18185e;
+            border-radius: 0px 0px 30px 30px;
+            bottom: 138px;
+            height: 15px;
+            width: 110px;
+            z-index: 2;
+        }
+
+        .computer-top {
+            background-color: white;
+            border: 5px solid #18185e;
+            border-radius: 30px 30px 0px 0px;
+            bottom: 157px;
+            height: 320px;
+            width: 480px;
+        }
+
+        .cactus {
+            background-image: linear-gradient(#adff02, #74d600);
+            border: 5px solid #18185e;
+            border-radius: 30px 30px 0px 0px;
+            bottom: 196px;
+            height: 50px;
+            position: absolute;
+            right: 64px;
+            width: 42px;
+            z-index: 2;
+        }
+
+        .cactus-container-top {
+            background-color: #3ae6ef;
+            border: 5px solid #18185e;
+            border-radius: 10px;
+            bottom: 165px;
+            height: 25px;
+            position: absolute;
+            right: 48px;
+            width: 75px;
+            z-index: 2;
+        }
+
+        .cactus-container-bottom {
+            background-color: #3ae6ef;
+            border: 5px solid #18185e;
+            border-radius: 0px 0px 20px 20px;
+            bottom: 105px;
+            color: #18185e;
+            font-size: 25px;
+            font-weight: bold;
+            height: 55px;
+            position: absolute;
+            right: 55px;
+            text-align: center;
+            width: 60px;
+            z-index: 2;
+        }
+
+        .cactus-point {
+            background-color: #18185e;
+            border-radius: 50%;
+            height: 7px;
+            position: absolute;
+            width: 7px;
+            z-index: 2;
+        }
+
+        .cactus-point-1 {
+            bottom: 254px;
+            right: 87px;
+        }
+
+        .cactus-point-2 {
+            bottom: 250px;
+            right: 100px;
+        }
+
+        .cactus-point-3 {
+            bottom: 241px;
+            right: 110px;
+        }
+
+        .cactus-point-4 {
+            bottom: 227px;
+            right: 114px;
+        }
+
+        .cactus-point-5 {
+            bottom: 213px;
+            right: 114px;
+        }
+
+        .cactus-point-6 {
+            bottom: 201px;
+            right: 114px;
+        }
+
+        .cactus-point-7 {
+            bottom: 250px;
+            right: 74px;
+        }
+
+        .cactus-point-8 {
+            bottom: 241px;
+            right: 64px;
+        }
+
+        .cactus-point-9 {
+            bottom: 227px;
+            right: 60px;
+        }
+
+        .cactus-point-10 {
+            bottom: 213px;
+            right: 60px;
+        }
+
+        .cactus-point-11 {
+            bottom: 201px;
+            right: 60px;
+        }
+
+        .cactus-point-12 {
+            bottom: 235px;
+            right: 87px;
+        }
+
+        .cactus-point-13 {
+            bottom: 220px;
+            right: 87px;
+        }
+
+        .cactus-point-14 {
+            bottom: 205px;
+            right: 87px;
+        }
+
+        .cactus-point-15 {
+            bottom: 211px;
+            right: 100px;
+        }
+
+        .cactus-point-16 {
+            bottom: 227px;
+            right: 100px;
+        }
+
+        .cactus-point-17 {
+            bottom: 211px;
+            right: 75px;
+        }
+
+        .cactus-point-18 {
+            bottom: 227px;
+            right: 75px;
+        }
+
+        .camera{
+            background-color: #18185e;
+            border-radius: 50%;
+            top: 123px;
+            height: 12px;
+            left: 460px;
+            position: absolute;
+            width: 12px;
+            z-index: 2;
+        }
+
+        .cup {
+            background-color: white;
+            border: 5px solid #18185e;
+            border-radius: 5px 5px 25px 25px;
+            bottom: 105px;
+            height: 70px;
+            left: 60px;
+            position: absolute;
+            width: 65px;
+        }
+
+        .cup-aromatic {
+            background-color: #74d600;
+            border: 5px solid #18185e;
+            bottom: 120px;
+            height: 10px;
+            left: 100px;
+            position: absolute;
+            width: 10px;
+        }
+
+        .cup-circle {
+            background-color: white;
+            border: 5px solid #18185e;
+            border-radius: 50%;
+            bottom: 140px;
+            height: 18px;
+            left: 48px;
+            position: absolute;
+            width: 18px;
+        }
+
+        .cup-line {
+            background-color: #18185e;
+            bottom: 140px;
+            height: 45px;
+            left: 107px;
+            position: absolute;
+            width: 5px;
+        }
+
+        .postic {
+            border: 5px solid #18185e;
+            height: 30px;
+            position: absolute;
+            width: 30px;
+        }
+
+        .postic-1 {
+            background-color: orange;
+            left: 192px;
+            top: 230px;
+            transform: rotate(15deg);
+        }
+
+        .postic-2 {
+            background-color: blueviolet;
+            left: 192px;
+            top: 300px;
+            transform: rotate(-5deg);
+        }
+
+        .screen {
+            border: 5px solid #18185e;
+            top: 139px;
+            height: 270px;
+            width: 430px;
+            z-index: 2;
+        }
+
+        .table {
+            border: 5px solid #18185e;
+            bottom: 80px;
+            height: 20px;
+            width: 900px;
+        }
+
+        .table-base {
+            border: 5px solid #18185e;
+            bottom: 0px;
+            height: 75px;
+            position: absolute;
+            width: 30px;
+        }
+
+        .table-base-1 {
+            left: 100px;
+        }
+
+        .table-base-2 {
+            right: 100px;
+        }
+
+    </style>
+
+    <div class="container">
+        <div class="screen center background-purple"></div>
+        <div class="computer-top center"></div>
+        <div class="computer-bottom center"></div>
+        <div class="computer-bottom-1 center background-purple"></div>
+        <div class="table center background-brown"></div>
+        <div class="cactus"></div>
+        <div class="cactus-container-top"></div>
+        <div class="cactus-container-bottom">JS</div>
+        <div class="cactus-container-top"></div>
+        <div class="cactus-point cactus-point-1"></div>
+        <div class="cactus-point cactus-point-2"></div>
+        <div class="cactus-point cactus-point-3"></div>
+        <div class="cactus-point cactus-point-4"></div>
+        <div class="cactus-point cactus-point-5"></div>
+        <div class="cactus-point cactus-point-6"></div>
+        <div class="cactus-point cactus-point-7"></div>
+        <div class="cactus-point cactus-point-8"></div>
+        <div class="cactus-point cactus-point-9"></div>
+        <div class="cactus-point cactus-point-10"></div>
+        <div class="cactus-point cactus-point-11"></div>
+        <div class="cactus-point cactus-point-12"></div>
+        <div class="cactus-point cactus-point-13"></div>
+        <div class="cactus-point cactus-point-14"></div>
+        <div class="cactus-point cactus-point-15"></div>
+        <div class="cactus-point cactus-point-16"></div>
+        <div class="cactus-point cactus-point-17"></div>
+        <div class="cactus-point cactus-point-18"></div>
+        <div class="table-base table-base-1 background-brown"></div>
+        <div class="table-base table-base-2 background-brown"></div>
+        <div class="postic postic-1"></div>
+        <div class="postic postic-2"></div>
+        <div class="cup"></div>
+        <div class="cup-circle"></div>
+        <div class="cup-aromatic"></div>
+        <div class="cup-line"></div>
+        <div class="camera"></div>
+    </div>
+</body>
+</html>
